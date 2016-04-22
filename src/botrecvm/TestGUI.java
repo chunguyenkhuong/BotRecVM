@@ -39,8 +39,9 @@ class MainWindow implements Observer, ActionListener {
     String place;
     JPanel titlePanel;
 
-     Motor motor = new Motor(this);  
-    Controller controller = new Controller(this);
+    MyObserver myobs = new MyObserver();
+    Motor motor = new Motor(myobs);  
+    Controller controller = new Controller(myobs);
     LightSensor lightSensor = new LightSensor(motor, controller);
     MoveSensor moveSensor = new MoveSensor(motor, controller);
 
