@@ -16,6 +16,10 @@ public class Controller {
     }    
     //TODO 3: 
     //Create buttonPressed() method: Set sum as zero and call printTicket method (printer object)
+    public void buttonPressed() {
+        printer.printTicket(this.sum);
+        this.sum = 0;
+    }
     
     //TODO 2:
     //Create bottleAdded() method (bottle as parameters type int)
