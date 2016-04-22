@@ -38,9 +38,6 @@ public class LightSensor {
         }
         controller.bottleAdded(bottle);
     }
-    public void setFirst() {
-        this.first = true;
-    }
  
     public void setFirst() {
         this.first = true;
